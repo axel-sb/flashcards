@@ -1,0 +1,78 @@
+/*// 20220524 https://garden.bradwoods.io/notes/css-reset#changesFromJoshsCssReset0 */
+
+
+/* Use a more intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove all margins & padding. */
+* {
+    margin : 0;
+    padding: 0;
+}
+
+/* Prevent mobile browsers increasing font-size. */
+html {
+    -moz-text-size-adjust   : none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust        : none;
+}
+
+/* Allow percentage-based heights. */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    /* Improve text rendering. */
+    -webkit-font-smoothing: antialiased;
+    /* Prevent the rubber band scroll effect when the user hits the top or bottom of the document */
+    overscroll-behavior   : none;
+}
+
+/* Remove unintuitive behaviour such as gaps around media elements.  */
+img,
+picture,
+video,
+canvas,
+svg,
+iframe {
+    display: block;
+}
+
+/* Avoid text overflow. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong {
+    font-weight  : 400;
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+/* Create a root stacking context (only when using JS frameworks like React). */
+#__next {
+    isolation: isolate;
+}
+
+/* E V E R G R E E N */

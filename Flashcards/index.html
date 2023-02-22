@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcards with ES6</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1></h1>
+  </header>
+
+
+  <button id="turn">⤺</button>
+
+  <div class="container">
+
+
+    <div id="card">
+
+
+      <div class="front-wrapper"><span class="front"></span></div>
+      <div class="back-wrapper hidden">
+        <div class="grade-down grade-btns"></div>
+        <span class="back"></span>
+        <div id="controls">
+          <span id="loading">loading</span>
+          <button id="play" style="display:none">🔊</button>
+          <button id="pause" style="display:none">||</button>
+        </div>
+        <div id="progress">
+          <div id="bar"></div>
+        </div>
+        <div class="grade-up grade-btns"></div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <footer>
+    <section>
+      <button id="prev">❮</button>
+      <div> <span id="counter-badge"></span><sup id="grade-badge">0</sup></div>
+      <button id="next">❯</button>
+    </section>
+<!-- <audio controls src="https://audio.dict.cc/speak.audio.v2.php?error_as_text=1&type=mp3&id=10462&lang=en&lp=DEEN&voice=Russell"></audio> -->
+<audio id="my-audio">
+  <source
+    src="https://audio.dict.cc/speak.audio.v2.php?error_as_text=1&type=mp3&id=10462&lang=en&lp=DEEN&voice=Russell""
+    type="audio/mpeg" />
+
+</audio>
+
+
+  </footer>
+
+
+  <script src="script.js" type="module"></script>
+  <!-- <script type="module">import data from './flashcards.mjs'
+    console.log(data[94]) </script> -->
+  <script>  </script>
+
+
+
+</body>
+
+</html>
